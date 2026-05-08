@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build output — generated on publish, not committed
+dist/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
