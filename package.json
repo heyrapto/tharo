@@ -1,6 +1,6 @@
 {
   "name": "methara",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The high-performance, local-first utility belt for AI Agents.",
   "type": "module",
   "main": "./dist/index.js",
@@ -46,6 +46,7 @@
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
+    "docx": "^9.6.1",
     "eslint": "^8.0.0",
     "jest": "^29.0.0",
     "ts-jest": "^29.0.0",
@@ -58,13 +59,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heyrapto/tharo.git"
+    "url": "git+https://github.com/heyrapto/methara.git"
   },
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/heyrapto/tharo/issues"
+    "url": "https://github.com/heyrapto/methara/issues"
   },
-  "homepage": "https://github.com/heyrapto/tharo#readme"
+  "homepage": "https://github.com/heyrapto/methara#readme"
 }
