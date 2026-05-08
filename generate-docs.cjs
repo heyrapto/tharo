@@ -365,7 +365,7 @@ function coverPage() {
       width: { size: 5000, type: WidthType.DXA },
       columnWidths: [2000, 3000],
       rows: [
-        ["Version", "1.0.1"],
+        ["Version", "1.0.2"],
         ["Package", "npm install methara"],
         ["Language", "TypeScript"],
         ["Node", ">= 18.0.0"],

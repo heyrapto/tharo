@@ -5,7 +5,16 @@
 `methara` is a lightweight, zero-dependency (at runtime) TypeScript library designed to provide AI Agents with the essential tools they need to process human language locally, securely, and with extreme speed.
 
 [![NPM Version](https://img.shields.io/npm/v/methara.svg)](https://www.npmjs.com/package/methara)
+[![Documentation](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://methara.gitbook.io/methara-docs/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## 📖 Documentation
+
+For full API reference, advanced guides, and integration examples, visit our official documentation:
+
+👉 **[methara.gitbook.io/methara-docs](https://methara.gitbook.io/methara-docs/)**
 
 ---
 

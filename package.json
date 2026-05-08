@@ -1,6 +1,6 @@
 {
   "name": "methara",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The high-performance, local-first utility belt for AI Agents.",
   "type": "module",
   "main": "./dist/index.js",
