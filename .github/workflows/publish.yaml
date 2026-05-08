@@ -36,7 +36,7 @@ jobs:
       - name: Build
         run: npm run build
 
-  # ── JOB 2: Only runs when you push a version tag (v1.0.0) ─────────────────
+  # ── job 2: Only runs when you push a version tag (v1.0.0) ─────────────────
   publish:
     name: Publish to npm
     needs: test # Won't run if tests fail
