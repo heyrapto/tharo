@@ -139,10 +139,6 @@ function sanitize(text: string): RedactedString {
   return result;
 }
 
-// ─────────────────────────────────────────────
-// EXPORT
-// ─────────────────────────────────────────────
-
 export const Guard = {
   sanitize,
   isInjection,
