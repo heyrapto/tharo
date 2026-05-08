@@ -1,6 +1,6 @@
 {
   "name": "tharo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The high-performance, local-first utility belt for AI Agents.",
   "type": "module",
   "main": "./dist/index.js",
