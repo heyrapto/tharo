@@ -432,7 +432,7 @@ function isReminder(text: string): boolean {
 // EXPORT
 // ─────────────────────────────────────────────
 
-export const intent = {
+export const Intent = {
   analyze,
   score,
   isView,

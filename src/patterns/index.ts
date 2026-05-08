@@ -272,7 +272,7 @@ function profile(conversation: Conversation): UserProfile {
 // EXPORT
 // ─────────────────────────────────────────────
 
-export const patterns = {
+export const Patterns = {
   urgency,
   style,
   time,

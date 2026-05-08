@@ -143,7 +143,7 @@ function sanitize(text: string): RedactedString {
 // EXPORT
 // ─────────────────────────────────────────────
 
-export const guard = {
+export const Guard = {
   sanitize,
   isInjection,
   maskPII,

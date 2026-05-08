@@ -1,8 +1,8 @@
-export { intent } from "./intent/index.js";
-export { patterns } from "./patterns/index.js";
-export { entities } from "./entities/index.js";
-export { guard } from "./guard/index.js";
-export { processor } from "./processor/index.js";
+export { Intent } from "./intent/index.js";
+export { Patterns } from "./patterns/index.js";
+export { Entities } from "./entities/index.js";
+export { Guard } from "./guard/index.js";
+export { Processor } from "./processor/index.js";
 
 export type {
   // Intent

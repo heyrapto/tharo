@@ -297,7 +297,7 @@ function extract(text: string): EntityMap {
 // EXPORT
 // ─────────────────────────────────────────────
 
-export const entities = {
+export const Entities = {
   extract,
   date,
   time,

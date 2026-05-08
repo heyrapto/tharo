@@ -215,7 +215,7 @@ function shrink(text: string, options: ShrinkOptions = {}): string {
 // EXPORT
 // ─────────────────────────────────────────────
 
-export const processor = {
+export const Processor = {
   shrink,
   removeStopwords,
   normalizeWhitespace,
