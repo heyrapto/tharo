@@ -58,10 +58,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/tharo.git"
+    "url": "https://github.com/heyrapto/tharo.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/tharo/issues"
+    "url": "https://github.com/heyrapto/tharo/issues"
   },
-  "homepage": "https://github.com/yourusername/tharo#readme"
+  "homepage": "https://github.com/heyrapto/tharo#readme"
 }
