@@ -9,9 +9,9 @@ const TRACKING_ID_PATTERN =
   /\b([A-Z]{2,}-\d{3,}|\b[A-Z]\d{4,}\b|\bORD-\w+|\bTRK-\w+|\bREF-\w+|\bINV-\w+|\bTKT-\w+)/g;
 
 const TIME_PATTERNS: RegExp[] = [
-  /\b(\d{1,2}):(\d{2})\s*(am|pm)?\b/i,
-  /\b(\d{1,2})\s*(am|pm)\b/i,
-  /\bat\s+(\d{1,2})(?::(\d{2}))?\s*(am|pm)?\b/i,
+  /\b(\d{1,2}):(\d{2})\s*(am|pm)?\b/i, // 10:30pm
+  /\b(\d{1,2})\s*(am|pm)\b/i, // 3pm
+  /\bat\s+(\d{1,2})(?::(\d{2}))?\s*(am|pm)?\b/i, // at 10 or at 10:30 or at 10pm
 ];
 
 const WORD_NUMBERS: Record<string, number> = {
@@ -208,13 +208,30 @@ function date(text: string): Date | null {
 function time(text: string): string | null {
   const clean = text.toLowerCase();
 
-  for (const pattern of TIME_PATTERNS) {
+  for (let i = 0; i < TIME_PATTERNS.length; i++) {
+    const pattern = TIME_PATTERNS[i];
     const match = clean.match(pattern);
     if (!match) continue;
 
-    let hours = parseInt(match[1] ?? match[2]);
-    const minutes = parseInt(match[2] ?? "0") || 0;
-    const meridiem = (match[3] ?? "").toLowerCase();
+    let hours = 0;
+    let minutes = 0;
+    let meridiem = "";
+
+    if (i === 0) {
+      // 10:30pm -> [10:30pm, 10, 30, pm]
+      hours = parseInt(match[1]);
+      minutes = parseInt(match[2]);
+      meridiem = (match[3] ?? "").toLowerCase();
+    } else if (i === 1) {
+      // 3pm -> [3pm, 3, pm]
+      hours = parseInt(match[1]);
+      meridiem = (match[2] ?? "").toLowerCase();
+    } else if (i === 2) {
+      // at 10:30pm -> [at 10:30pm, 10, 30, pm]
+      hours = parseInt(match[1]);
+      minutes = parseInt(match[2] || "0");
+      meridiem = (match[3] ?? "").toLowerCase();
+    }
 
     if (meridiem === "pm" && hours < 12) hours += 12;
     if (meridiem === "am" && hours === 12) hours = 0;

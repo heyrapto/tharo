@@ -1,6 +1,6 @@
 {
   "name": "methara",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The high-performance, local-first utility belt for AI Agents.",
   "type": "module",
   "main": "./dist/index.js",
@@ -34,6 +34,11 @@
     "pii",
     "guard",
     "middleware",
+    "gemini",
+    "gpt",
+    "claude",
+    "ollama",
+    "grok",
     "text-processing",
     "chatbot",
     "typescript"

@@ -55,7 +55,7 @@ const KEYWORDS = {
       "display",
       "check",
       "get",
-      "fetch",
+      "retrieve",
       "find",
       "search",
       "look",
@@ -195,7 +195,7 @@ const VIEW_PATTERNS: RegExp[] = [
   /^(?:show|display|list|view|see|check|what)\s+(?:my\s+|the\s+|all\s+)?(?:tasks?|schedule|appointments?|events?|todos?)/i,
   /^(?:what|how)\s+(?:do\s+i\s+have|are|is)\s+(?:my|the|any)\s+(?:tasks?|schedule|appointments?|events?)/i,
   /^(?:tasks?|schedule|appointments?|events?)\s+(?:for|on|today|tomorrow|this\s+week)/i,
-  /^(?:get|fetch|give\s+me)\s+(?:my\s+)?(?:tasks?|schedule|events?|appointments?)/i,
+  /^(?:get|retrieve|give\s+me)\s+(?:my\s+)?(?:tasks?|schedule|events?|appointments?)/i,
 ];
 
 const DELETE_PATTERNS: RegExp[] = [
