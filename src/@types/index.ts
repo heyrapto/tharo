@@ -127,3 +127,22 @@ export interface ShrinkOptions {
   normalizeWhitespace?: boolean;
   removeSignature?: boolean;
 }
+
+// ─────────────────────────────────────────────
+// PARSER TYPES
+// ─────────────────────────────────────────────
+
+export interface ASTNode {
+  type: "Document" | "Sentence" | "Word" | string;
+  value: string;
+  children?: ASTNode[];
+}
+
+// ─────────────────────────────────────────────
+// CLASSIFIER TYPES
+// ─────────────────────────────────────────────
+
+export interface ClassificationResult {
+  label: string;
+  value: number;
+}

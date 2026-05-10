@@ -211,10 +211,6 @@ function shrink(text: string, options: ShrinkOptions = {}): string {
   return result;
 }
 
-// ─────────────────────────────────────────────
-// EXPORT
-// ─────────────────────────────────────────────
-
 export const Processor = {
   shrink,
   removeStopwords,
